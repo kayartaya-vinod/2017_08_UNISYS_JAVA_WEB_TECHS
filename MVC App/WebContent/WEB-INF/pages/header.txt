@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/thirdparty/bootstrap/css/bootstrap.min.css">
+	<script src="assets/thirdparty/jquery/jquery.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>AddressBook - MVC App</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="well">AddressBook - MVC App</h1>
+		<a href="./" class="btn btn-primary">Home</a>
+		<a href="./list-all" class="btn btn-primary">List all</a>
+		<a href="./add-contact" class="btn btn-primary">Add new</a>
+		Hello, ${sessionScope.username == null ? "friend" : sessionScope.username }!
+		<hr>
